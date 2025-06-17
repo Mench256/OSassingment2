@@ -9,7 +9,7 @@
 
 int main(){
 
-
+    // This loop controls the number of processes made
     for(int i = 0; i < 4; i++){
     pid_t pid = fork();
 
