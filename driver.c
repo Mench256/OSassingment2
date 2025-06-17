@@ -3,12 +3,6 @@
 // sites used
 // https://www.geeksforgeeks.org/c/read-a-file-line-by-line-in-c/
 
-/*
-int chunk_index = atoi(argv[1]);  // 0 to 3
-int chunk_size = 10000 / 4;
-int start = chunk_index * chunk_size;
-int end = start + chunk_size;
-*/
 
 
 #include <stdio.h>
@@ -26,7 +20,7 @@ int main(int argc, char* argv[]){
     char* names[SIZE];
     int processes = 4;
 
-    FILE* fp = fopen("data.csv", "r");
+    FILE* fp = fopen(argv[2], "r");
 
     char line[256];
 
@@ -74,7 +68,7 @@ int main(int argc, char* argv[]){
         }
     }
 
-    FILE* out  = fopen(argv[2], "w");
+    FILE* out  = fopen(argv[3], "w");
 
     if(out == NULL){
         printf("Unable to open output file!\n");

@@ -15,12 +15,14 @@ int main(){
 
     if(pid == 0){
 
-    char input[50];
+    char block[10];
+    sprintf(block, "%d", i);
+
+    char input[] = "data.csv";
     char output[50];
-    sprintf(input, "data.csv");
     sprintf(output, "sorted%d.csv", i);
 
-    execl("driver", "driver", input, output, NULL);
+    execl("./driver", "driver", block, input, output, NULL);
 
     perror("exec failed!");
     exit(1);
