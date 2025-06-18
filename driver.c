@@ -10,6 +10,17 @@
 // https://www.geeksforgeeks.org/c/understanding-extern-keyword-in-c/
 // https://www.youtube.com/watch?v=T91q6ZngBk4
 
+// TO COMPILE:
+// ------------------
+// For part 1:
+// gcc -o driver driver.c
+// gcc -o master master.c
+// ./master
+
+// For part 2:
+// gcc -o ThreadMaster ThreadMaster.c
+// ./ThreadMaster
+
 
 
 
