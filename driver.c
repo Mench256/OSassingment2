@@ -1,4 +1,4 @@
-// Abraham Menchaca, 1002167812, CSE3320-002
+// Abraham Menchaca
 // github link: https://github.com/Mench256/OSassingment2.git
 
 // I HAVE GLOBAL VARIABLES AT TOP THAT DETERMINE NUMBER OF PROCESSES OR THREADS CHOSEN BY USER
